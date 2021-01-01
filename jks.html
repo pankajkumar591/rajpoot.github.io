@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>55</title>
+  </head>
+  <link rel="stylesheet" href="login.css">
+  <body style="color:lighdark">
+        <h1 style=background-color:#ffffff>Welcome to Rajpoot Pankaj Galiotra's Website
+          <hr>
+          <form action="index.html" class="signup" style="padding: 155px;padding-left: 155px;margin: 0;padding: 0;FONT-WEIGHT: 2000;font: color;background-color:blue;height: 250px;width: 500px;color: chartreuse;font-size: 25px;"><h5 style="width:45px; required; margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+height: 30%;
+width: 100%;
+outline: none;
+padding-left: 155px;
+border-radius: 155px;
+border: 12px solid lightgrey;
+border-bottom-width: 10px;
+font-size: 27px;
+transition: all 0.44s ease;">Input Details</h5>
+                                  <div class="field">
+            <input type="text" placeholder="Your Name" style="width:45px; required; margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 155px;
+  border-radius: 155px;
+  border: 10px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 25px;
+  transition: all 0.3s ease;" required>
+                                  </div>
+                      <div class="field">
+                                    <input type="text" placeholder="Login/Signup" style="width:45px; required; margin: 0;
+                          padding: 0;
+                          box-sizing: border-box;
+                          font-family: 'Poppins', sans-serif;
+                          height: 100%;
+                          width: 100%;
+                          outline: none;
+                          padding-left: 155px;
+                          border-radius: 155px;
+                          border: 10px solid lightgrey;
+                          border-bottom-width: 2px;
+                          font-size: 25px;
+                          transition: all 0.3s ease;" required>
+                                  </div>
+                      <div class="field" style="
+              height: 45px;
+              width: 500px;
+          ">
+                                    <input type="password" placeholder="Confirm password your Brain" style="width:45px; required; margin: 0;
+                          padding: 0;
+                          box-sizing: border-box;
+                          font-family: 'Poppins', sans-serif;
+                          height: 100%;
+                          width: 100%;
+                          outline: none;
+                          padding-left: 155px;
+                          border-radius: 155px;
+                          border: 10px solid lightgrey;
+                          border-bottom-width: 2px;
+                          font-size: 25px;
+                          transition: all 0.3s ease;" required>
+                                  </div>
+                      <div class="field btn">
+                                    <div class="btn-layer" required="">
+                      </div>
+                      <input type="submit" value="Signup" style="margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+z-index: 1;
+position: relative;
+background: none;
+border: none;
+color: #fff;
+padding-left: 0;
+border-radius: 5px;
+font-size: 20px;
+font-weight: 500;
+cursor: pointer;
+background-color: black;
+width: 500px;
+height: 50px";">
+
+          </div></form>
+        <script>
+              const loginText = document.querySelector(".title-text .login");
+              const loginForm = document.querySelector("form.login");
+              const loginBtn = document.querySelector("lable.login");
+              const signupBtn = document.querySelector("label.signup");
+              const signupLink = document.querySelector("form .signup-link a");
+              signupBtn.onclick = (()=>{
+                loginForm.style.marginLeft = "-50%";
+                loginText.style.marginLeft = "-50%";
+              });
+              loginBtn.onclick = (()=>{
+                loginForm.style.marginLeft = "0%";
+                loginText.style.marginLeft = "0%";
+              });
+              signupLink.onclick = (()=>{
+                signupBtn.click();
+                return false;
+              });
+            </script>
+          </body>
+        </html>

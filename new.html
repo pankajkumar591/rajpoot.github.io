@@ -1,0 +1,303 @@
+<!-- Description: Background music
+Browsers: Internet Explorer, Opera
+Additional Information: Replace tune.mp3 with the filename/path for whichever sound file you wish to play. -->
+
+<embed src="%selectedtext%" hidden="true"></embed>
+<bgsound src="%selectedtext%"><!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" /><!-- Description: A button that closes the browser window when clicked
+Browsers: Google Chrome, Internet Explorer, Safari, Opera
+Additional information: Replace Close Window with whatever text you would like to appear on the button. -->
+  <link rel="stylesheet" style="
+  *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  }
+  html,body{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	place-items: center;
+	background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  }
+  ::selection{
+	background: #fa4299;
+	color: #fff;
+  }
+  .wrapper{
+	overflow: hidden;
+	max-width: 390px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  }
+  .wrapper .title-text{
+	display: flex;
+	width: 200%;
+  }
+  .wrapper .title{
+	width: 50%;
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+	transition: all 10.50s cubic-bezier(0.4, 0, 1, 1);
+  }
+  .wrapper .slide-controls{
+	position: relative;
+	display: flex;
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	margin: 30px 0 10px 0;
+	justify-content: space-between;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+  }
+  .slide-controls .slide{
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 48px;
+	cursor: pointer;
+	z-index: 1;
+	transition: all 10.6s ease;
+  }
+  .slide-controls label.signup{
+	color: #000;
+  }
+  .slide-controls .slider-tab{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	left: 0;
+	z-index: 0;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+	transition: all 1.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  input[type="radio"]{
+	display: none;
+  }
+  #signup:checked ~ .slider-tab{
+	left: 50%;
+  }
+  #signup:checked ~ label.signup{
+	color: #fff;
+	cursor: default;
+	user-select: none;
+  }
+  #signup:checked ~ label.login{
+	color: #000;
+  }
+  #login:checked ~ label.signup{
+	color: #000;
+  }
+  #login:checked ~ label.login{
+	cursor: default;
+	user-select: none;
+  }
+  .wrapper .form-container{
+	width: 100%;
+	overflow: hidden;
+  }
+  .form-container .form-inner{
+	display: flex;
+	width: 200%;
+  }
+  .form-container .form-inner form{
+	width: 50%;
+	transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .form-inner form .field{
+	height: 50px;
+	width: 100%;
+	margin-top: 20px;
+  }
+  .form-inner form .field input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	padding-left: 15px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	border-bottom-width: 2px;
+	font-size: 17px;
+	transition: all 0.3s ease;
+  }
+  .form-inner form .field input:focus{
+	border-color: #fc83bb;
+	/* box-shadow: inset 0 0 3px #fb6aae; */
+  }
+  .form-inner form .field input::placeholder{
+	color: #999;
+	transition: all 0.3s ease;
+  }
+  form .field input:focus::placeholder{
+	color: #b3b3b3;
+  }
+  .form-inner form .pass-link{
+	margin-top: 5px;
+  }
+  .form-inner form .signup-link{
+	text-align: center;
+	margin-top: 30px;
+  }
+  .form-inner form .pass-link a,
+  .form-inner form .signup-link a{
+	color: #fa4299;
+	text-decoration: none;
+  }
+  .form-inner form .pass-link a:hover,
+  .form-inner form .signup-link a:hover{
+	text-decoration: underline;
+  }
+  form .btn{
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+  }
+  form .btn .btn-layer{
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
+	border-radius: 5px;
+	transition: all 0.4s ease;;
+  }
+  form .btn:hover .btn-layer{
+	left: 0;
+  }
+  form .btn input[type="submit"]{
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+	background: none;
+	border: none;
+	color: #fff;
+	padding-left: 0;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+  }
+  ">
+<form><input type="button" value="Close Window" onClick="window.close(self)" /></form>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<title>Document</title>
+<link href="CSS3%20Menu_files/css3menu1/style.css" rel="stylesheet" type="text/css" />
+      <!-- CSS rules to specify Google Font families
+      font-family: 'Abril Fatface', cursive;
+    -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+</head>
+
+<body><!--
+Form that opens a Google Maps window that will display the driving directions from your address to the address indicated
+Instructions: Replace the current address with the address of your business/home
+-->
+
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+  <label for="saddr">Enter your location</label>
+  <input type="text" name="saddr" />
+  <input type="hidden" name="daddr" value="Cullen Blvd, Houston, Texas 77047" />
+  <input type="submit" value="Find your path" />
+</form>
+
+<h1 style="color: #ff004c;">Welcome to Pankaj YT������</h1>
+<img id="img" alt="" class="style-scope yt-img-shadow" src="https://yt3.ggpht.com/ytc/AAUvwnga3AEaeSuiN02lZQeUKBmoYNc7Zy3Q3IVh7wmRIQ=s176-c-k-c0x00ffffff-no-rj" width="80" />
+<hr />
+<h4 style="color: #55b47a;">apka bahut bahut sawagat hai hmare Programme mai</h4>
+<hr />
+<h2 style="color: #0000ff;">MY Name is pankaj I am Very Excited For My 1500 Subscribers
+of youtube Completing soon Thank you every Much whose Subscribe My Channel������������</h2>
+<hr />MY Channel Name is PankajYt Gamer <input id="" name="" type="checkbox" />
+<p>You Can also Subscribe My Channel BY Link������‍</p>
+<h3 style="color: #c50000; clor: rgb(255, 0, 242);">Subscribers Choice First Subscribe
+My Channel </h3>
+<p style="color: rgb(112, 81, 15)">Input Your Free Fire Uid First
+<input id="" name="" type="number" /></p>
+<p style="color: crimson">
+<table border="1" style="width: 10%">
+	 <tbody><tr>
+		  <td style="color: blue;">Send DJ ALok</td>
+		 <td style="color: rgb(255, 0, 34)">Limited 0/1</td>
+		 <td style="color: rgb(34, 197, 48)"><input type="checkbox" value="" /></td>
+		 </tr>
+	 <tr>
+		  <td style="color: blue">Chrono</td>
+		<td style="color: rgb(255, 0, 34)">Limited 0/1</td>
+		 <td style="color: rgb(30, 255, 0)">Not avalilabe Now������</td>
+		 </tr>
+	<tr>
+		<td style="color: blue">100 Diamonds</td>
+		<td style="color: rgb(255, 0, 34)">Limited 0/2</td>
+		<td style="color: rgb(34, 197, 48)"><input type="checkbox" value="" /></td>
+	</tr>
+	<tr>
+		<td style="color: blue">200 Diamonds</td>
+		<td style="color: rgb(255, 0, 34)">Limited 0/2</td>
+		<td style="color: rgb(34, 197, 48)"><input type="checkbox" value="" /></td>
+	</tr>
+	<tr>
+		<td style="color: blue">500 Diamonds</td>
+		<td style="color: rgb(255, 0, 34)">Limited 0/2</td>
+		<td style="color: rgb(34, 197, 48)"><input type="checkbox" value="" /></td>
+	</tr>
+	<tr>
+		<td style="color: blue">100 Diamonds</td>
+		<td style="color: rgb(255, 0, 34)">Limited 0/2</td>
+		<td style="color: rgb(34, 197, 48)"><input type="checkbox" value="" /></td>
+	</tr>
+	<tr>
+		<td style="color: blue">2120 Diamonds</td>
+		<td style="color: rgb(255, 0, 34)">Limited 0/2</td>
+		<td style="color: rgb(34, 197, 48)"><input type="checkbox" value="" /></td>
+	</tr>
+	<tr>
+		<td style="color: blue">5500 Diamonds</td>
+		<td style="color: rgb(255, 0, 34)">Limited 0/1</td>
+		<td style="color: rgb(34, 197, 48)"><input type="checkbox" value="" /></td>
+	</tr>
+	<tr>
+		<td style="color: blue">1130Diamonds</td>
+		<td style="color: rgb(255, 0, 34)">Limited 0/1</td>
+		<td style="color: rgb(34, 197, 48)"><input type="checkbox" value="" /></td>
+	</tr>
+</tbody>
+</table>
+<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPhNXWjdcu53DLPuskp0c_VOwRJOI12zz4TmvkLUFtMA&amp;" style="width: 54px;">
+</a></p><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPhNXWjdcu53DLPuskp0c_VOwRJOI12zz4TmvkLUFtMA&amp;" style="width: 54px;">
+</a><h1><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPhNXWjdcu53DLPuskp0c_VOwRJOI12zz4TmvkLUFtMA&amp;" style="width: 54px;">Sumbit</a></h1><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPhNXWjdcu53DLPuskp0c_VOwRJOI12zz4TmvkLUFtMA&amp;" style="width: 54px;">
+</a><a href="https://www.youtube.com/watch?v=uXFw2EfOs7c" style="width: 54px;">
+</a><h1><a href="https://www.youtube.com/watch?v=uXFw2EfOs7c" style="width: 54px;">if You Face any Prblem Comment here</a></h1><a href="https://www.youtube.com/watch?v=uXFw2EfOs7c" style="width: 54px;">
+</a>
+<a href="https://www.youtube.com/channel/UCHCOQQ3b_SP8b5cfiF-LcFA" style="width: 54px;">
+</a><h3><a href="https://www.youtube.com/channel/UCHCOQQ3b_SP8b5cfiF-LcFA" style="width: 54px;">Plz. Complte 2K Subscribers Request</a></h3><a href="https://www.youtube.com/channel/UCHCOQQ3b_SP8b5cfiF-LcFA" style="width: 54px;">
+</a>
+
+</body>
+
+<form id="form1" runat="server">
+	<asp:Login id="Login1" runat="server">
+	</asp:Login>
+</form>
+<p class="c3m-switch-input"></p>
+<p class="c3m-switch-input"></p>
+
+
+
+</html>
+.liked Gaming
